@@ -10,60 +10,82 @@ body{
     
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5000px;
+} 
+
 .header{
-    height: 300px;
+    height: 10%;
     background-color: aqua;
     position: relative;
 }
 
 .main{
-    height: 5000px;
-    background-color: blueviolet;
-    position: relative;
-    text-align: center;
-    
+    height: 90%;
+    background-color: blueviolet;    
 }
 
 .footer{
-    height: 300px;
+    height: 10%;
     background-color: gray;
     position: relative;
     text-align: center;
 }
 
-.perfil{
+.cajaNegra{
     background-color: black;
     color: white;
-    height: 10%;
     display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.cajaBlanca{
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.mitad{
+    width: 50%;
+    padding: 50px 
+}
+
+/* PERFIL */
+.perfil{
+    height: 10%;
 }
 
 .sobreMi{
-    width: 50%;
-    
+       
 }
 
 .detalles{
-    width: 50%;
-    flex-direction: row;    
-}
+      
+} 
 
+/* EXPERIENCIA */
 .experiencia{
-    background-color: white;
     height: 20%;
 }
 
 /* .educacion{
-
+    width: 50%;
+    padding: 50px
 }
-
+ 
 .empleo{
+    width: 50%;
+    padding: 50px
+}  */
 
-} */
-
+/* HABILIDADES */
 .habilidades{
-    background-color: black;
-    color: white;
     height: 40%;
 }
 
@@ -73,29 +95,39 @@ body{
 
 .idiomas{
 
-}
+} */
 
+/* HERRAMIENTAS */
 .herramientas{
 
-} */
+} 
 
+/* PROYECTOS */
 .proyectos{
-    background-color: white;
     height: 15%;
 }
 
+/* PERSONAL */
 .personal{
-    background-color: black;
-    color: white;
     height: 15%;
 }
-/* .contacto{
 
-} */
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 h2{
     text-align: center;
-    padding-top: 50px;
-    width: 100vw;
-    position: absolute;
+    
+} 
+
+h3{
+    text-align: center;
 }
+
+.circular {
+    border-radius: 50%;
+}
+
