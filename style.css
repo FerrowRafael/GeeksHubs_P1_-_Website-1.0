@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header{
+    height: 300px;
+    background-color: aqua;
+    position: relative;
+}
+
+.main{
+    height: 5000px;
+    background-color: blueviolet;
+    position: relative;
+    text-align: center;
+    
+}
+
+.footer{
+    height: 300px;
+    background-color: gray;
+    position: relative;
+    text-align: center;
+}
+
+.perfil{
+    background-color: black;
+    color: white;
+    height: 10%;
+    display: flex;
+}
+
+.sobreMi{
+    width: 50%;
+    
+}
+
+.detalles{
+    width: 50%;
+    flex-direction: row;    
+}
+
+.experiencia{
+    background-color: white;
+    height: 20%;
+}
+
+/* .educacion{
+
+}
+
+.empleo{
+
+} */
+
+.habilidades{
+    background-color: black;
+    color: white;
+    height: 40%;
+}
+
+/* .tecnologias{
+
+}
+
+.idiomas{
+
+}
+
+.herramientas{
+
+} */
+
+.proyectos{
+    background-color: white;
+    height: 15%;
+}
+
+.personal{
+    background-color: black;
+    color: white;
+    height: 15%;
+}
+/* .contacto{
+
+} */
+
+h2{
+    text-align: center;
+    padding-top: 50px;
+    width: 100vw;
+    position: absolute;
+}
