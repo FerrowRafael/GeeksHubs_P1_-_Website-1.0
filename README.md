@@ -1,2 +1,2 @@
-# Mi_p-gina_personal
+# Mi_página_personal
 Ejercicio clase Bootcamp GeeksHubs
