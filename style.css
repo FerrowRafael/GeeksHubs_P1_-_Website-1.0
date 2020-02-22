@@ -91,7 +91,7 @@ body{
     padding-bottom: 50px; 
 }
 
-.cajaNegra{
+.cajaNaranja{
     background: rgb(2,0,36);
     background: rgb(255,135,42);
     background: linear-gradient(180deg, rgba(255,135,42,1) 10%, rgba(255,134,40,0.9) 20%, rgba(255,132,38,0.8) 30%, rgba(255,131,34,0.8) 40%, rgba(255,127,28,0.8) 50%, rgba(255,125,25,0.8) 60%, rgba(255,124,23,0.8) 70%, rgba(255,118,13,0.8) 80%, rgba(255,115,7,0.7) 90%, rgba(255,111,0,0.6) 100%);
@@ -311,8 +311,43 @@ li > a:hover{
 }
   /* FIN GRID EXPERIENCIA */
 
+  .barraEnlaces{
+      background-color: rgb(48, 136, 207);
+      border: 2px solid rgb(34, 97, 148);
+      border-radius: 10px;
+      display: flex;
+      align-self: flex-end;
+      position: relative;
+      flex-direction: column;
+      padding: 15px;
+      position: fixed;
+      z-index: 1;
+      font-size: 30px;
+      margin: 80px 80px 0px 0px;
+      line-height: 1.5; 
+  }
+
+  .barraEnlaces a{
+    text-decoration: none;
+    color: white
+  }
+
+  .barraEnlaces a:hover{
+    background:linear-gradient(to bottom, #658fc2 5%, #7bade3 100%);
+	background-color:#658fc2;
+  }
+
+  .barraEnlaces a:active{
+    background: gold;
+	background-color:#144075;
+  }
+
   /* --------------------------------------------------- */
   .contacto{
-      background-color: lightblue;
       margin: 80px;
   }
+
+  .proyectos{
+    margin: 80px;
+}
+
