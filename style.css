@@ -37,15 +37,17 @@ body{
 }
 
 .footer{
-    height: 50px;
+    height: 200px;
     background-color: gray;
-    position: relative;
+    position: absolute;
     text-align: center;
 }
 
 /* PERFIL */
 .perfil{
     height: 10%;
+    display: flex;
+    align-items: center;
 }
 
 .redes{
@@ -87,17 +89,18 @@ body{
 }
 
 .cajaNegra{
-    background-color: black;
+    background: rgb(2,0,36);
+background: linear-gradient(180deg, rgba(2,0,36,1) 33%, rgba(4,201,233,0.7903536414565826) 90%, rgba(0,212,255,1) 100%);
     color: white;
 }
 
 .cajaBlanca{
-    background-color: white;
+    background: rgb(201,201,201);
+background: linear-gradient(180deg, rgba(201,201,201,1) 44%, rgba(226,226,226,0.7903536414565826) 94%, rgba(255,255,255,1) 100%);
     color: black;    
 }
 
 .cajaRoja{
-    background-color: red;
     color: black;
 }
 
@@ -132,7 +135,7 @@ h2{
     padding: 30px;
     font-size: 40px;  
     display: block;
-    background-color: blue; 
+    color: firebrick; 
     border-radius: 0px 15px 0px 15px;
     padding: 15px 15px 0px 15px;
 } 
@@ -159,7 +162,9 @@ p{
 .circular {
     border-radius: 50%;
     min-width: 250px;
-    height: 250px;     
+    height: 250px;
+    display: flex;
+    align-self: center;     
 }
 
 /* LISTAS */
