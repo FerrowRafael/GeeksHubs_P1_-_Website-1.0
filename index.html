@@ -6,6 +6,7 @@
     <title>Rafael Fernandez Gomez - Index</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./recursos/FotoPerfil.jpg">
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" data-auto-a11y="true"></script>
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
@@ -30,18 +31,20 @@
             <div class="perfil cajaGrande cajaNegra">
                 <h2>Perfil</h2>
                 <div class="row">
-                    <div class="sobreMi mitad">
+                    <div class="sobreMi mitadIzDe">
                         <h3>Sobre Mí</h3>
                         <p>Desde el primer momento de mi carrera profesional, con la Diplomatura en Empresariales, he sido un apasionado de la gestión corporativa y de cómo la tecnología puede ser una herramienta de innovación y de aporte de valor diferencial para las empresas.
                         Ahora, después de haberme curtido en la administración de diferentes empresas en sectores muy diversos, quiero profundizar en el diseño y desarrollo de sistemas de información que ayuden a alcanzar los objetivos de una compañía. Me considero una persona versátil, cómoda en el cambio y con muchas ganas de seguir aprendiendo y progresando. Pienso que mi perfil multidisciplinar y mi afán por sumar siempre al equipo del que forme parte puede ser de gran valor para cualquier proyecto.</p>
                     </div>
                     <img class="circular" src="./recursos/FotoPerfil.jpg"/>
-                    <div class="detalles mitad">
+                    <div class="detalles mitadIzDe">
                         <h3>Detalles</h3>
                         <p><b>Nombre: </b>Rafael Fernández Gómez</p>
                         <p><b>Edad: </b>32 años</p>
                         <p><b>Localización: </b>Valencia, España</p>
-                        <button href="./contacto.html" class="contactameButton">Contacta conmigo</button>
+                        <form action="./contacto.html">
+                            <input type="submit"class="contactameButton" class="fas fa-at" value="@ Contacta conmigo"/>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -63,7 +66,8 @@
             <div class="cajaGrande cajaBlanca">
                 <h2>Experiencia</h2>
                 <div class="experiencia">
-                    <h3>Educacion</h3>
+                    <!-- EDUCACION -->
+                    <h3>Educación</h3>
                     <div class="expGrid">
                         <div class="one">
                             <p><b>Florida Universitaria</b> </br>2008 - 2012</p>
@@ -86,6 +90,7 @@
                     </div>
                 </div>
                 <div class="experiencia">
+                    <!-- EMPLEO -->
                     <h3>Empleo</h3>
                     <div class="expGrid">
                         <div class="one">
@@ -134,6 +139,8 @@
             <div class="habilidades cajaGrande cajaNegra">
                 <h2>Habilidades</h2>
                 <div class="column">
+
+                    <!-- TECNOLOGIAS -->
                     <div class="tecnologias">
                         <h3>Tecnologias</h3>
                         <div class="logosGrid">
@@ -180,7 +187,7 @@
                         <div class="logosGrid">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png" class="logoIT" alt="Adobe XD logo">
                             <img src="https://pngimage.net/wp-content/uploads/2018/06/photoshop-logo-png-4.png" class="logoIT" alt="Adobe Photoshop logo">
-                            <img src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/217/landscape/cypress.png" class="logoIT" alt="CypressJS logo">
+                            <img src="https://s3.us-east-2.amazonaws.com/upload-icon/uploads/icons/png/3556671901536211770-512.png" class="logoIT" alt="CypressJS logo">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Wordpress_Blue_logo.png" class="logoIT" alt="Wordpress logo">
                             <img src="https://pngimage.net/wp-content/uploads/2018/06/xampp-icon-png-7.png" class="logoIT" alt="Xampp logo">
                             <img src="https://pngimage.net/wp-content/uploads/2020/02/trello-logo-png.png" class="logoIT" alt="Trello logo">
@@ -197,9 +204,10 @@
             <div class="personal cajaGrande cajaBlanca">
                 <h2>Personal</h2>
                 <div class="column">
+                    <!-- VOLUNTARIADO -->
                     <div class="voluntariado">
                         <h3>Voluntariado</h3>
-                        <div class="row">
+                        <div class="row mitadArAb">
                             <a href="http://www.voluntariadodeportivo.com/">
                             <img src="./recursos/Voluntario.jpg" width=360 height=300/></a>
                             <div>
@@ -213,33 +221,28 @@
                                     <li>Copa Davis Valencia 2018</li>
                                 </ul>
                             </div>   
-                        </div>                        
-                                             
+                        </div>                                                           
                     </div>
+>
+                    <!-- DEPORTE -->
                     <div class="deporte">
                         <h3>Deporte</h3>
-                        <div class="column">
-                            <div class="row" id=ciclismo>
+                        <div class="row mitadArAb">
+                            <img src="./recursos/SenderismoLoriguilla.jpg" width=360 height=300/></a>
+                            <div>
+                                <!-- CICLISMO -->    
                                 <h4>Ciclismo</h4>
-                                <div class="cajas">
-                                    <p>Me gusta salir los fines de semana a hacer rutas cerca de Valencia.</p>
-                                    <p>La ruta con la que mas disfrute fue recorriendo la Via Verde de Ojos Negros desde Teruel hasta Valencia durante el año 2018.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="row" id=senderismo></div>
+                                <p>Me gusta salir los fines de semana a hacer rutas cerca de Valencia.</p>
+                                <p>La ruta con la que mas disfrute fue recorriendo la Via Verde de Ojos Negros desde Teruel hasta Valencia durante el año 2018.</p>
+                                                                  
+                                <!-- SENDERISMO -->
                                 <h4>Senderismo</h4>
-                                <div class="cajas">
-                                    <img src="./recursos/SenderismoLoriguilla.jpg" width=360 height=300/></a>
-                                    <div>
-                                        <p>Cuando no hay eventos de voluntariado suelo hacer senderismo</p>
-                                        <p>Algunas de las rutas en las que estado</p>
-                                        <ul>
-                                            <li>Ruta Peña Cortada - Calles/Chelva</li>
-                                            <li>Ruta Embalse de Loriguilla</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <p>Cuando no hay eventos de voluntariado suelo hacer senderismo</p>
+                                <p>Algunas de las rutas en las que estado</p>
+                                    <ul>
+                                        <li>Ruta Peña Cortada - Calles/Chelva</li>
+                                        <li>Ruta Embalse de Loriguilla</li>
+                                    </ul>              
                             </div>
                         </div>
                     </div>

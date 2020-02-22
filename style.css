@@ -116,9 +116,15 @@ body{
     padding-top: 30px;
 }
 
-.mitad{
+.mitadIzDe{
     width: 50%;
     padding: 0px 100px 0px 100px;
+}
+
+.mitadArAb{
+    height: 50%;
+    padding: 0px 100px 0px 100px;
+
 }
 
 .row{
@@ -157,7 +163,7 @@ h3{
     color: rgb(48, 136, 207);
 }
 
-h3 Idiomas {
+.idiomas h3  {
     background-color: lawngreen;
 }
 
@@ -222,16 +228,43 @@ li > a:hover{
     padding: 20px
 }
 
-Button{
-    background-color: rgb(48, 136, 207);
-    width: 100px;
-    height: 50px;
-    display: flex;
-    margin: 50px;
+/* BOTON CONTACTAR */
+.contactameButton {
+	box-shadow: 6px 5px 10px 3px #1b6cc2;
+	background:linear-gradient(to bottom, #7bade3 5%, #658fc2 100%);
+	background-color:#7bade3;
+	border-radius:33px;
+	border:3px solid #4c8ede;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:19px;
+	font-weight:bold;
+	font-style:italic;
+	padding:20px 20px;
+	text-decoration:none;
+    text-shadow:1px 3px 4px #284466;
+    margin-top: 40px;
 }
+.contactameButton:hover {
+	background:linear-gradient(to bottom, #658fc2 5%, #7bade3 100%);
+	background-color:#658fc2;
+}
+.contactameButton:active {
+	position:relative;
+	top:1px;
+}
+/* FIN BOTON CONTACTAR */
 
 .idiomas div{
     padding: 0px 15px 15px 15px;
+}
+
+.deporte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* GRID EXPERIENCIA */
@@ -277,3 +310,9 @@ Button{
     font-size: 22px; 
 }
   /* FIN GRID EXPERIENCIA */
+
+  /* --------------------------------------------------- */
+  .contacto{
+      background-color: lightblue;
+      margin: 80px;
+  }
