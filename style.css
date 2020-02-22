@@ -1,6 +1,6 @@
 :root{
     --margin-cajas: 0px 80px 60px 80px;
-    --border-radius: 0px 20px 0px 20px;
+    --border-radius: 5px 20px 5px 20px;
 }
 
 *{
@@ -32,50 +32,45 @@ body{
     justify-content: center;
     align-items: center; 
     color: white; 
-}
-
-.header h1{
-    font-size: 80px;
-    font-family:'Lobster';   
-}
-
-.header p{
-    font-size: 40px;
-    color: rgb(167, 44, 44);
-    font-family:'Indie Flower';
+    position:relative;
 }
 
 .main{
-    height: 5000px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(245,245,245,1) 22%, rgba(241,241,241,1) 30%, rgba(235,235,235,0.9) 40%, rgba(230,230,230,0.85) 50%, rgba(225,225,225,0.7) 60%, rgba(219,219,219,0.55) 70%, rgba(215,215,215,0.4) 80%, rgba(240,240,240,0.15) 90%, rgba(210,210,210,0) 100%);
+    position:relative;  
 }
 
 .footer{
-    height: 200px;
+    height: 400px;
     background-color: gray;
     position: absolute;
     text-align: center;
+    position:relative;
 }
 
 /* PERFIL */
 .perfil{
-    height: 10%;
     display: flex;
     align-items: center;
+    position:relative;
 }
 
 .redes{
-    height: 5%;
+    position:relative;
 }
 
 /* EXPERIENCIA */
 .experiencia{
-    height: 25%;
+    position:relative;
+    margin: 0px 400px 0px 400px;
+    padding-top: 15px;   
 }
 
 /* HABILIDADES */
 .habilidades{
-    height: 35%;
     text-align: center;
+    position:relative;
 }
 
 /* HERRAMIENTAS */
@@ -83,14 +78,9 @@ body{
 
 }  */
 
-/* PROYECTOS */
-.proyectos{
-    height: 10%;
-}
-
 /* PERSONAL */
 .personal{
-    height: 15%;
+    position:relative;
 }
 
 /* CAJAS */
@@ -99,18 +89,21 @@ body{
     flex-direction: column;
     margin: var(--margin-cajas);
     border-radius: var(--border-radius);
+    padding-bottom: 50px; 
 }
 
 .cajaNegra{
     background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 33%, rgba(4,201,233,0.7903536414565826) 90%, rgba(0,212,255,1) 100%);
+    background: rgb(255,135,42);
+    background: linear-gradient(180deg, rgba(255,135,42,1) 10%, rgba(255,134,40,0.9) 20%, rgba(255,132,38,0.8) 30%, rgba(255,131,34,0.8) 40%, rgba(255,127,28,0.8) 50%, rgba(255,125,25,0.8) 60%, rgba(255,124,23,0.8) 70%, rgba(255,118,13,0.8) 80%, rgba(255,115,7,0.7) 90%, rgba(255,111,0,0.6) 100%);
     color: white;
 }
 
 .cajaBlanca{
     background: rgb(201,201,201);
     background: linear-gradient(180deg, rgba(201,201,201,0.896796218487395) 75%, rgba(255,255,255,0.8547794117647058) 91%, rgba(226,226,226,0.5634628851540616) 100%);
-    color: black;    
+    color: black;   
+    
 }
 
 .cajaRoja{
@@ -119,9 +112,9 @@ body{
 
 .cajas{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .mitad{
@@ -143,13 +136,17 @@ body{
     padding-top: 15px;
 }
 
+/* H GROUP */
+h1 > strong{
+    color: rgb(48, 136, 207);
+}
+
 h2{
     text-align: center; 
     padding: 30px;
     font-size: 40px;  
     font-family: 'Playfair Display';
     display: block;
-    color: firebrick; 
     border-radius: 0px 15px 0px 15px;
     padding: 15px 15px 0px 15px;
 } 
@@ -158,7 +155,7 @@ h3{
     padding-bottom: 10px;
     font-family: 'Advent Pro', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 25px;
-    color: grey
+    color: rgb(48, 136, 207);
 }
 
 p{
@@ -167,12 +164,31 @@ p{
     font-size: 20px;
 }
 
+.header h1{
+    font-size: 80px;
+    font-family:'Lobster';   
+}
+
+.header p{
+    font-size: 40px;
+    background-color: rgb(255, 136, 0);
+    color:white;
+    font-family:'Indie Flower';
+    border-radius: 5px;
+    padding: 0px 5px 0px 5px;
+}
+
 .circular {
     border-radius: 50%;
     min-width: 250px;
     height: 250px;
     display: flex;
     align-self: center;     
+}
+
+.cajas img{
+    width: 150px;
+    height: 150px;
 }
 
 /* LISTAS */
@@ -198,17 +214,47 @@ li > a:hover{
 }
 
 .logoIT{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     padding: 20px
 }
 
+/* GRID EXPERIENCIA */
+.expGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+  }
 
-.educacion p{
-    padding-right: 300px;
-}
+  .one {
+    grid-column: 1;
+    grid-row: 1;
+  }
 
-.empleo p{
-    padding-right: 300px;
-}
+  .two { 
+    grid-column: 2;
+    grid-row: 2;
+  }
 
+  .three {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .four {
+    grid-column: 2;
+    grid-row: 1 ;
+  }
+
+  .five {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .six {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  /* FIN GRID EXPERIENCIA */
