@@ -25,6 +25,40 @@ body{
     background-attachment: fixed
 }
 
+/* BARRA DE NAVEGACION */
+.barraEnlaces{
+    background-color: var(--color-azul);
+    border: 2px solid rgb(34, 97, 148);
+    border-radius: 10px;
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    padding: var(--padding);
+    position: fixed;
+    z-index: 1;
+    font-size: 25px;
+    margin: 80px 80px 0px -80px;
+    line-height: 1.5; 
+    overflow: hidden;
+}
+
+.barraEnlaces a{
+  text-decoration: none;
+  color: var(--color-blanco);
+  display: flex;
+  justify-content: center ;
+}
+
+.barraEnlaces a:hover{
+    background:linear-gradient(to bottom, #658fc2 5%, #7bade3 100%);
+  background-color:#658fc2;
+}
+
+.barraEnlaces a:active{
+  background-color:#144075;
+  color: black
+  }
+
 /* CONTAINER */
 .container{
     display: flex;
@@ -44,19 +78,25 @@ body{
     position:relative;
 }
 
+.header h1{
+    font-size: 80px;
+    font-family:'Lobster';   
+}
+
+.header p{
+    font-size: 40px;
+    background-color: var(--color-naranja);
+    color:var(--color-blanco);
+    font-family:'Indie Flower';
+    border-radius: 5px;
+    padding: 0px 5px 0px 5px;
+}
+
 /* MAIN */
 .main{
     background: var(--color-blanco);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(245,245,245,1) 22%, rgba(241,241,241,1) 30%, rgba(235,235,235,0.9) 40%, rgba(230,230,230,0.85) 50%, rgba(225,225,225,0.7) 60%, rgba(219,219,219,0.55) 70%, rgba(215,215,215,0.4) 80%, rgba(240,240,240,0.15) 90%, rgba(210,210,210,0) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(245,245,245,1) 22%, rgba(241,241,241,1) 30%, rgba(235,235,235,0.9) 40%, rgba(230,230,230,0.85) 50%, rgba(225,225,225,0.7) 60%, rgba(219,219,219,0.55) 70%, rgba(215,215,215,0.4) 80%, rgba(210,210,210,0.15) 90%, rgba(200,200,200,0) 100%);
     position:relative;  
-}
-
-/* FOOTER */
-.footer{
-    height: 400px;
-    position: absolute;
-    text-align: center;
-    position:relative;
 }
 
 /* PERFIL */
@@ -75,20 +115,18 @@ body{
     color:black;    
 }
 
+.circular {
+    border-radius: 50%;
+    min-width: 250px;
+    height: 250px;
+    margin-top: 40px;       
+}
+
 .detalles {
     width: 500px
 }
 
-div .circular {
-    border-radius: 50%;
-    min-width: 250px;
-    height: 250px;
-    margin-top: 40px;
-    
-         
-}
-
-/*   */
+/* REDES SOCIALES */
 .redes{
     position:relative;
 }
@@ -99,6 +137,44 @@ div .circular {
     margin: 0px 400px 0px 400px; 
 }
 
+/* GRID EXPERIENCIA */
+.expGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(60px, auto);
+}
+
+.expGrid b{
+    background: rgb(255, 255, 255);
+    color: var(--color-naranja);
+    font-size: 22px;
+    font-family: Arial; 
+}
+
+/* TECNOLOGIAS */
+.logosGrid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.logosGrid h3{
+    padding: 15px 15px 0px 0px;
+}
+
+.logosGrid div{
+    padding: 0px 30px 0px 0px;
+}
+
+.logoIT{
+    width: 150px;
+    height: 150px;
+    padding: 20px
+}
+
 /* PERSONAL */
 .personal{
     position:relative;
@@ -107,10 +183,41 @@ div .circular {
     justify-content: space-evenly;
 }
 
+/* VOLUNTARIADO */
 .fotografias{
     width: 400px;
     height: 250px;
 }
+
+.voluText{
+    width: 500px;
+    padding-left: 150px
+}
+
+.voluText a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* FOOTER */
+.footer{
+    height: 400px;
+    position: absolute;
+    text-align: center;
+    position:relative;
+}
+
+.footer > a{
+    display: flex;
+    justify-content: center;
+    margin:100px;
+    font-size:100px;
+    color:var(--color-naranja);
+}
+
+.footer > a:hover{
+    color: rgb(212, 113, 0); 
+} 
 
 /* CAJAS */
 .cajaGrande{
@@ -123,16 +230,15 @@ div .circular {
 
 .cajaNaranja{
     background: rgb(2,0,36);
-    background: rgb(255,135,42);
+    background: var(--color-naranja);
     background: linear-gradient(180deg, rgba(255,135,42,1) 10%, rgba(255,134,40,0.9) 20%, rgba(255,132,38,0.8) 30%, rgba(255,131,34,0.8) 40%, rgba(255,127,28,0.8) 50%, rgba(255,125,25,0.8) 60%, rgba(255,124,23,0.8) 70%, rgba(255,118,13,0.8) 80%, rgba(255,115,7,0.7) 90%, rgba(255,111,0,0.6) 100%);
     color: var(--color-blanco);
 }
 
 .cajaBlanca{
     background: rgb(201,201,201);
-    background: linear-gradient(180deg, rgba(201,201,201,0.896796218487395) 75%, rgba(255,255,255,0.8547794117647058) 91%, rgba(226,226,226,0.5634628851540616) 100%);
-    color: black;   
-    
+    background: linear-gradient(180deg, rgba(201,201,201,0.9) 70%, rgba(225,225,225,0.7) 80%, rgba(255,255,255,0.50) 90%);
+    color: black;      
 }
 
 .cajaRoja{
@@ -152,15 +258,27 @@ div .circular {
     border-radius: 50%;
 }
 
-/* .mitadIzDe{
-    width: 50%;
-    padding: 0px 100px 0px 100px; 
-} */
-
-.mitadArAb{
-    height: 50%;
-    padding: 0px 100px 0px 100px;
-}
+.cajas img:hover{
+    opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
+  }
+  @-webkit-keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+  }
+  @keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+  }
 
 .row{
     display: flex;
@@ -207,20 +325,6 @@ p{
     font-size: 20px;
 }
 
-.header h1{
-    font-size: 80px;
-    font-family:'Lobster';   
-}
-
-.header p{
-    font-size: 40px;
-    background-color: var(--color-naranja);
-    color:var(--color-blanco);
-    font-family:'Indie Flower';
-    border-radius: 5px;
-    padding: 0px 5px 0px 5px;
-}
-
 /* LISTAS */
 li{
     list-style: none;
@@ -233,33 +337,14 @@ li > a{
     color: black;
 }
 
+li > a:hover{
+    text-decoration: underline;
+  }
+
 img{
     border-radius: var(--border-radius);
 }
-
-.logosGrid{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-.logosGrid h3{
-    padding: 15px 15px 0px 0px;
-}
-
-.logosGrid div{
-    padding: 0px 30px 0px 0px;
-}
-
-.logoIT{
-    width: 150px;
-    height: 150px;
-    padding: 20px
-}
     
-
 /* BOTON CONTACTAR */
 .contactameButton {
 	background:linear-gradient(to bottom, #7bade3 5%, #658fc2 100%);
@@ -277,34 +362,18 @@ img{
 	text-decoration:none;
     margin-top: 40px;
 }
-/* FIN BOTON CONTACTAR */
 
-.voluText{
-    width: 500px;
-    padding-left: 150px
+.contactameButton:hover {
+    background:linear-gradient(to bottom, #658fc2 5%, #7bade3 100%);
+    background-color:#658fc2;
+    }
+
+.contactameButton:active {
+    position:relative;
+    top:1px;
 }
 
-.deporte{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* GRID EXPERIENCIA */
-.expGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    grid-auto-rows: minmax(60px, auto);
-}
-
-.expGrid b{
-    background: rgb(255, 255, 255);
-    color: var(--color-naranja);
-    font-size: 22px;
-    font-family: Arial; 
-}
-
+/* CUADRICULA 3X2 */
 ._1f1c {
     grid-column: 1;
     grid-row: 1;
@@ -334,40 +403,10 @@ img{
     grid-column: 2;
     grid-row: 3;
 }
-/* FIN GRID EXPERIENCIA */
-
-
-
-.barraEnlaces{
-      background-color: var(--color-azul);
-      border: 2px solid rgb(34, 97, 148);
-      border-radius: 10px;
-      display: flex;
-      align-self: flex-end;
-      flex-direction: column;
-      padding: var(--padding);
-      position: fixed;
-      z-index: 1;
-      font-size: 25px;
-      margin: 80px 80px 0px -80px;
-      line-height: 1.5; 
-      overflow: hidden;
-}
-
-.barraEnlaces a{
-    text-decoration: none;
-    color: var(--color-blanco);
-}
-
-.footer > a{
-    display: flex;
-    justify-content: center;
-    margin:100px;
-    font-size:100px;
-    color:var(--color-naranja);
-}
 
   /* --------------------------------------------------- */
+  /* CONTACTO.HTML */
+ 
 .cajaContacto{ 
     margin-top: 80px;
 }
@@ -382,34 +421,12 @@ img{
     padding-bottom: 20px;   
 }
 
+/* INFORMACION DE CONTACTO */
 .contactoRedes img{
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     padding: 20px;
     color: black;
-}
-
-.formulario input{
-    width: 300px;
-    height: 40px;
-    background-color: rgb(202, 202, 202);
-    border-radius: var(--border-radius);
-    padding-left: 10px;
-    font-size: 18px;
-    font-family: Arial;
-    margin-block-end: 0px;
-}
-
-.formulario textarea{
-    background-color: rgb(202, 202, 202);
-    border-radius: var(--border-radius);
-    padding: 10px;
-    font-size: 18px;
-    font-family: Arial;
-}
-
-.botonEnviar{
-    margin-left: 40px;
 }
 
 .nombreContacto{
@@ -435,8 +452,29 @@ img{
     margin: 0px 40px 0px 40px;
 }
 
+/* FORMULARIO CONTACTO */
+.formulario input{
+    width: 300px;
+    height: 40px;
+    background-color: rgb(202, 202, 202);
+    border-radius: var(--border-radius);
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: Arial;
+    margin-block-end: 0px;
+}
+
+.formulario textarea{
+    background-color: rgb(202, 202, 202);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    font-size: 18px;
+    font-family: Arial;
+}
+
+/* BOTON CONTACTO */
 .submitButton {
-	background-color:#3077cf;
+	background-color: var(--color-azul);
 	border-radius:9px;
 	border:3px solid #4e6096;
 	display:inline-block;
@@ -446,18 +484,20 @@ img{
 	font-size:20px;
 	font-weight:bold;
 	padding:15px 100px;
-	text-decoration:none;
+    text-decoration:none;
+    margin-left: 40px;
 }
+
 .submitButton:hover {
-	background-color:#2e6fbf;
+	background-color:rgb(46, 111, 191);
 }
 .submitButton:active {
 	position:relative;
 	top:1px;
 }
 
-
-/* PAGINA PROYECTOS */
+/* --------------------------------------------------- */
+/* PROYECTOS.HTML */
 
 .proyectos{
     margin-top: 80px;
@@ -484,9 +524,8 @@ img{
     grid-row-gap: 20px;
 }
 
-/* --------------------------------- */
-/* PRUEBA OPACITY BOX */
-.Container {
+/* OPACITY BOX */
+.proyectoImg {
     position: relative;
     background-color: white;
     border-radius: var(--border-radius)
@@ -513,13 +552,14 @@ img{
     text-align: center;
 }
   
-.Container:hover .image {
+.proyectoImg:hover .image {
     opacity: 0.3;
 }
   
-.Container:hover .middle {
+.proyectoImg:hover .middle {
     opacity: 1;
 }
+/* ----- */
 
 .text {
     color: black;
