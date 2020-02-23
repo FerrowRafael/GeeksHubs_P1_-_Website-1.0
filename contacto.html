@@ -26,7 +26,7 @@
     <!-- CONTACTO -->
     <div class="cajaGrande cajaNaranja cajaContacto">
         <h2>Contacto</h2>
-        <div class="row">
+        <div class="row interiorCajaCont">
             <!-- INFORMACIÓN DE CONTACTO -->
             <div class="column">
                 <h3>Información de contacto</h3>
@@ -43,35 +43,48 @@
                 </ul>
                 <div class="contactoRedes">
                     <a href="https://www.linkedin.com/in/rafael-fernandez-gomez-/" target="_blank">
-                    <img src="https://image.flaticon.com/icons/png/512/124/124011.png"/></a>
+                    <img src="https://pngimage.net/wp-content/uploads/2018/06/png-linkedin-logo-5.png"/></a>
                     <a href="https://twitter.com/ferrowrafael" target="_blank">
-                    <img src="https://image.flaticon.com/icons/png/512/124/124021.png"/></a>
+                    <img src="https://pngimage.net/wp-content/uploads/2019/05/twitter-logo-black-and-white-png-1.png"/></a>
                     <a href="https://github.com/FerrowRafael" target="_blank">
                     <img src="https://pngimage.net/wp-content/uploads/2018/06/logo-github-png-5.png"/></a>
-                </div>   
+                </div>  
+                <div class="nombreContacto">
+                    <h4>Rafael Fernández Gómez</h4>
+                    <p>Estudiante Full Stack Developer</p>
+                </div> 
             </div>
+
             <!-- FORMULARIO CONTACTO -->
             <div class="column">
                 <h3>Contáctame</h3>
+
+                <p>Por favor, rellena el formulario y te contestaré en 24 horas.</br> O si le prefieres <a href="mailto:ferrowrafael@gmail.com">escríbeme por aquí</a>.</p></br>
                 <form class="formulario" method="post">
                     <div class="expGrid">
                         <div class="_1f1c">
-                            <input type="text" placeholder="Nombre y Apellidos" id="nombre" name="contacto_nombre">
-                        </div>
-                        <div class="_2f2c">
-                            <input type="text" placeholder="Nombre de la Empresa"id="empresa" name="contacto_empresa">
-                        </div>
-                        <div class="_2f1c">
-                            <input type="email" placeholder="Email de contacto"id="email" name="contacto_email">
+                            <input type="text" placeholder="Nombre" id="nombre" name="contacto_nombre">
                         </div>
                         <div class="_1f2c">
+                            <input type="text" placeholder="Apellidos" id="nombre" name="contacto_nombre">
+                        </div>
+                        <div class="_2f1c">
+                            <input type="text" placeholder="Nombre de la Empresa"id="empresa" name="contacto_empresa">
+                        </div>
+                        <div class="_2f2c">
+                            <input type="email" placeholder="Email de contacto"id="email" name="contacto_email">
+                        </div>
+                        <div class="_3f2c">
                             <input type="number" placeholder="Teléfono de contacto" id="telefono" name="contacto_telefono">
                         </div>
                         <div class="_3f1c">
                             <input type="text" placeholder="Asunto" id="asunto" name="contacto_asunto">
                         </div>
-                        <div class="_3f2c">
+                        <div class="">
                             <textarea name="mensaje" placeholder="Introduzca aquí su mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="botonEnviar">
+                            <button class="contactameButton">Enviar</button>
                         </div>
                     </div>
                 </form>

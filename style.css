@@ -1,6 +1,9 @@
 :root{
     --margin-cajas: 0px 80px 60px 80px;
     --border-radius: 5px 20px 5px 20px;
+    --padding: 15px;
+    /* COLORES */
+
 }
 
 *{
@@ -63,7 +66,7 @@ body{
 .experiencia{
     position:relative;
     margin: 0px 400px 0px 400px;
-    padding-top: 15px;   
+    padding-top: var(--padding);   
 }
 
 /* HABILIDADES */
@@ -142,14 +145,14 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 15px;
+    padding-top: var(--padding);
 }
 
 .column{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 15px;
+    padding-top: var(--padding);
 }
 
 /* H GROUP */
@@ -253,9 +256,10 @@ li > a:hover{
 	font-size:19px;
 	font-weight:bold;
 	font-style:italic;
-	padding:20px 20px;
+	padding:20px 40px;
 	text-decoration:none;
     text-shadow:1px 3px 4px #284466;
+    margin-left: 40px;
     margin-top: 40px;
 }
 .contactameButton:hover {
@@ -332,7 +336,7 @@ li > a:hover{
       align-self: flex-end;
       position: relative;
       flex-direction: column;
-      padding: 15px;
+      padding: var(--padding);
       position: fixed;
       z-index: 1;
       font-size: 25px;
@@ -358,7 +362,6 @@ li > a:hover{
   /* --------------------------------------------------- */
 .cajaContacto{ 
     margin-top: 80px;
-
 }
 
 .interiorCajaCont{
@@ -366,25 +369,16 @@ li > a:hover{
     justify-content: space-evenly;
 }
 
-.contacto li{
-    font-size: 20px;    
-}
-
-.contacto > b{
-    font-weight: bold;
+.interiorCajaCont li{
+    font-size: 20px; 
+    padding-bottom: 20px;   
 }
 
 .contactoRedes img{
     width: 50px;
     height: 50px;
-}
-  
-.contacto div{
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    font-size: 20px;
+    padding: 20px;
+    color: black;
 }
 
 .formulario input{
@@ -406,10 +400,32 @@ li > a:hover{
     font-family: Arial;
 }
 
+.botonEnviar{
+    margin-left: 40px;
+}
 
+.nombreContacto{
+    background-color: white;
+    margin-top: 80px;
+    padding: 10px;
+    border-radius: 15px;
+}
 
+.nombreContacto > h4{
+    color: rgb(48, 136, 207);
+    font-size: 40px;
+    font-family:'Lobster';    
+}
 
-
+.nombreContacto p{
+    font-size: 20px;
+    background-color: rgb(255, 136, 0);
+    color:white;
+    font-family:'Indie Flower';
+    border-radius: 5px;
+    padding: 0px 5px 0px 5px;
+    margin: 0px 40px 0px 40px;
+}
 
 
 .proyectos{
