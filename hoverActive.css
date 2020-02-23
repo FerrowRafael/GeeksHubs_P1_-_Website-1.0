@@ -1,0 +1,54 @@
+/* HOVER */
+
+li > a:hover{
+  text-decoration: underline;
+}
+
+.cajas img:hover{
+  opacity: 1;
+-webkit-animation: flash 1.5s;
+animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+0% {
+  opacity: .4;
+}
+100% {
+  opacity: 1;
+}
+}
+@keyframes flash {
+0% {
+  opacity: .4;
+}
+100% {
+  opacity: 1;
+}
+}
+
+.footer > a:hover{
+  color: rgb(212, 113, 0); 
+} 
+
+.barraEnlaces a:hover{
+  background:linear-gradient(to bottom, #658fc2 5%, #7bade3 100%);
+background-color:#658fc2;
+}
+
+.contactameButton:hover {
+background:linear-gradient(to bottom, #658fc2 5%, #7bade3 100%);
+background-color:#658fc2;
+}
+
+
+
+/* ACTIVE */
+.contactameButton:active {
+	position:relative;
+	top:1px;
+}
+
+.barraEnlaces a:active{
+  background: gold;
+background-color:#144075;
+}

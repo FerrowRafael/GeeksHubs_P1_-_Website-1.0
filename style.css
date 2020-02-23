@@ -2,8 +2,11 @@
     --margin-cajas: 0px 80px 60px 80px;
     --border-radius: 5px 20px 5px 20px;
     --padding: 15px;
-    /* COLORES */
 
+    /* COLORES */
+    --color-azul: rgb(48, 136, 207);
+    --color-naranja: rgb(255, 136, 0);
+    --color-blanco: white;
 }
 
 *{
@@ -34,12 +37,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center; 
-    color: white; 
+    color: var(--color-blanco); 
     position:relative;
 }
 
 .main{
-    background: rgb(255,255,255);
+    background: var(--color-blanco);
     background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(245,245,245,1) 22%, rgba(241,241,241,1) 30%, rgba(235,235,235,0.9) 40%, rgba(230,230,230,0.85) 50%, rgba(225,225,225,0.7) 60%, rgba(219,219,219,0.55) 70%, rgba(215,215,215,0.4) 80%, rgba(240,240,240,0.15) 90%, rgba(210,210,210,0) 100%);
     position:relative;  
 }
@@ -104,7 +107,7 @@ body{
     background: rgb(2,0,36);
     background: rgb(255,135,42);
     background: linear-gradient(180deg, rgba(255,135,42,1) 10%, rgba(255,134,40,0.9) 20%, rgba(255,132,38,0.8) 30%, rgba(255,131,34,0.8) 40%, rgba(255,127,28,0.8) 50%, rgba(255,125,25,0.8) 60%, rgba(255,124,23,0.8) 70%, rgba(255,118,13,0.8) 80%, rgba(255,115,7,0.7) 90%, rgba(255,111,0,0.6) 100%);
-    color: white;
+    color: var(--color-blanco);
 }
 
 .cajaBlanca{
@@ -128,6 +131,7 @@ body{
 .cajas img{
     width: 150px;
     height: 150px;
+    border-radius: 50%;
 }
 
 .mitadIzDe{
@@ -138,7 +142,6 @@ body{
 .mitadArAb{
     height: 50%;
     padding: 0px 100px 0px 100px;
-
 }
 
 .row{
@@ -157,7 +160,7 @@ body{
 
 /* H GROUP */
 h1 > strong{
-    color: rgb(48, 136, 207);
+    color: var(--color-azul);
 }
 
 h2{
@@ -174,7 +177,7 @@ h3{
     padding-bottom: 20px;
     font-family: 'Advent Pro', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
-    color: rgb(48, 136, 207);
+    color: var(--color-azul);
 }
 
 .idiomas h3  {
@@ -194,8 +197,8 @@ p{
 
 .header p{
     font-size: 40px;
-    background-color: rgb(255, 136, 0);
-    color:white;
+    background-color: var(--color-naranja);
+    color:var(--color-blanco);
     font-family:'Indie Flower';
     border-radius: 5px;
     padding: 0px 5px 0px 5px;
@@ -221,9 +224,8 @@ li > a{
     color: black;
 }
 
-li > a:hover{
-    text-decoration: underline;
-}
+
+
 .sobreMi b{
     color:black;    
 }
@@ -262,14 +264,7 @@ li > a:hover{
     margin-left: 40px;
     margin-top: 40px;
 }
-.contactameButton:hover {
-	background:linear-gradient(to bottom, #658fc2 5%, #7bade3 100%);
-	background-color:#658fc2;
-}
-.contactameButton:active {
-	position:relative;
-	top:1px;
-}
+
 /* FIN BOTON CONTACTAR */
 
 .idiomas div{
@@ -288,48 +283,48 @@ li > a:hover{
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     grid-auto-rows: minmax(60px, auto);
-  }
+}
 
 .expGrid b{
     background: rgb(255, 255, 255);
-    color: rgb(255, 136, 0);
+    color: var(--color-naranja);
     font-size: 22px;
     font-family: Arial; 
 }
 
-  ._1f1c {
+._1f1c {
     grid-column: 1;
     grid-row: 1;
-  }
+}
 
-  ._2f2c { 
+._2f2c { 
     grid-column: 2;
     grid-row: 2;
-  }
+}
 
-  ._2f1c {
+._2f1c {
     grid-column: 1;
     grid-row: 2;
-  }
+}
 
-  ._1f2c {
+._1f2c {
     grid-column: 2;
     grid-row: 1 ;
-  }
+}
 
-  ._3f1c {
+._3f1c {
     grid-column: 1;
     grid-row: 3;
-  }
+}
 
-  ._3f2c {
+._3f2c {
     grid-column: 2;
     grid-row: 3;
-  }
-  /* FIN GRID EXPERIENCIA */
+}
+/* FIN GRID EXPERIENCIA */
 
-  .barraEnlaces{
-      background-color: rgb(48, 136, 207);
+.barraEnlaces{
+      background-color: var(--color-azul);
       border: 2px solid rgb(34, 97, 148);
       border-radius: 10px;
       display: flex;
@@ -342,22 +337,20 @@ li > a:hover{
       font-size: 25px;
       margin: 80px 80px 0px 0px;
       line-height: 1.5; 
-  }
+}
 
-  .barraEnlaces a{
+.barraEnlaces a{
     text-decoration: none;
-    color: white
-  }
+    color: var(--color-blanco);
+}
 
-  .barraEnlaces a:hover{
-    background:linear-gradient(to bottom, #658fc2 5%, #7bade3 100%);
-	background-color:#658fc2;
-  }
-
-  .barraEnlaces a:active{
-    background: gold;
-	background-color:#144075;
-  }
+.footer > a{
+    display: flex;
+    justify-content: center;
+    margin:100px;
+    font-size:100px;
+    color:var(--color-naranja);
+}
 
   /* --------------------------------------------------- */
 .cajaContacto{ 
@@ -405,30 +398,32 @@ li > a:hover{
 }
 
 .nombreContacto{
-    background-color: white;
+    background-color: var(--color-blanco);
     margin-top: 80px;
     padding: 10px;
     border-radius: 15px;
 }
 
 .nombreContacto > h4{
-    color: rgb(48, 136, 207);
+    color: var(--color-azul);
     font-size: 40px;
     font-family:'Lobster';    
 }
 
 .nombreContacto p{
     font-size: 20px;
-    background-color: rgb(255, 136, 0);
-    color:white;
+    background-color: var(--color-naranja);
+    color:var(--color-blanco);
     font-family:'Indie Flower';
     border-radius: 5px;
     padding: 0px 5px 0px 5px;
     margin: 0px 40px 0px 40px;
 }
 
-
+/* PAGINA PROYECTOS */
 .proyectos{
     margin: 80px;
 }
+
+
 
