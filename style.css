@@ -301,7 +301,7 @@ h2{
     text-align: center; 
     padding: 30px;
     font-size: 45px;  
-    font-family: 'Playfair Display';
+    font-family: Impact;
     display: block;
     border-radius: 0px 15px 0px 15px;
     padding: 15px 15px 0px 15px;
@@ -310,13 +310,15 @@ h2{
 h3{
     padding-top: 30px;
     padding-bottom: 20px;
-    font-family: 'Advent Pro', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Playfair Display', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
     color: var(--color-azul);
 }
 
 h4{
     font-size: 20px;
+    font-family: Arial;
+    
 }
 
 p{
