@@ -421,9 +421,63 @@ li > a{
 }
 
 /* PAGINA PROYECTOS */
+
 .proyectos{
-    margin: 80px;
+    margin-top: 80px;
 }
 
+.proyecto{
+    margin-bottom: 50px;
+}
 
+.proyecto img{
+    width: 400px;
+    height: 230px;
+}
 
+.proyecto a{
+    z-index: -1;
+}
+
+/* --------------------------------- */
+/* PRUEBA OPACITY BOX */
+.Container {
+    position: relative;
+    width: 50%;
+    background-color: white;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .Container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .Container:hover .middle {
+    opacity: 1;
+  }
+
+  
+  .text {
+    color: black;
+    font-family: "Lobster";
+    font-size: 30px;
+  }
