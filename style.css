@@ -439,11 +439,18 @@ li > a{
     z-index: -1;
 }
 
+.proyGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
 /* --------------------------------- */
 /* PRUEBA OPACITY BOX */
 .Container {
     position: relative;
-    width: 50%;
     background-color: white;
   }
   
@@ -475,7 +482,6 @@ li > a{
     opacity: 1;
   }
 
-  
   .text {
     color: black;
     font-family: "Lobster";
