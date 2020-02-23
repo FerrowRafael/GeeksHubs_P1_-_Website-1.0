@@ -80,6 +80,12 @@ body{
 /* PERSONAL */
 .personal{
     position:relative;
+    padding: 0px 50px;
+}
+
+.fotografias{
+    width: 300px;
+    height: 250px;
 }
 
 /* CAJAS */
@@ -116,9 +122,14 @@ body{
     padding-top: 30px;
 }
 
+.cajas img{
+    width: 150px;
+    height: 150px;
+}
+
 .mitadIzDe{
     width: 50%;
-    padding: 0px 100px 0px 100px;
+    padding: 0px 100px 0px 100px; 
 }
 
 .mitadArAb{
@@ -157,7 +168,7 @@ h2{
 } 
 
 h3{
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     font-family: 'Advent Pro', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
     color: rgb(48, 136, 207);
@@ -195,14 +206,11 @@ p{
     align-self: center;     
 }
 
-.cajas img{
-    width: 150px;
-    height: 150px;
-}
-
 /* LISTAS */
 li{
     list-style: none;
+    font-size: 16px;
+    color: rgb(36, 36, 36)
 }
 
 li > a{
@@ -212,6 +220,9 @@ li > a{
 
 li > a:hover{
     text-decoration: underline;
+}
+.sobreMi b{
+    color:black;    
 }
 
 .logosGrid{
@@ -272,43 +283,45 @@ li > a:hover{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(60px, auto);
   }
 
-  .one {
+.expGrid b{
+    background: rgb(255, 255, 255);
+    color: rgb(255, 136, 0);
+    font-size: 22px;
+    font-family: Arial; 
+}
+
+  ._1f1c {
     grid-column: 1;
     grid-row: 1;
   }
 
-  .two { 
+  ._2f2c { 
     grid-column: 2;
     grid-row: 2;
   }
 
-  .three {
+  ._2f1c {
     grid-column: 1;
     grid-row: 2;
   }
 
-  .four {
+  ._1f2c {
     grid-column: 2;
     grid-row: 1 ;
   }
 
-  .five {
+  ._3f1c {
     grid-column: 1;
     grid-row: 3;
   }
 
-  .six {
+  ._3f2c {
     grid-column: 2;
     grid-row: 3;
   }
-
-  .expGrid b{
-    color: rgb(255, 136, 0);
-    font-size: 22px; 
-}
   /* FIN GRID EXPERIENCIA */
 
   .barraEnlaces{
@@ -322,7 +335,7 @@ li > a:hover{
       padding: 15px;
       position: fixed;
       z-index: 1;
-      font-size: 30px;
+      font-size: 25px;
       margin: 80px 80px 0px 0px;
       line-height: 1.5; 
   }
@@ -343,11 +356,63 @@ li > a:hover{
   }
 
   /* --------------------------------------------------- */
-  .contacto{
-      margin: 80px;
-  }
+.cajaContacto{ 
+    margin-top: 80px;
 
-  .proyectos{
+}
+
+.interiorCajaCont{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contacto li{
+    font-size: 20px;    
+}
+
+.contacto > b{
+    font-weight: bold;
+}
+
+.contactoRedes img{
+    width: 50px;
+    height: 50px;
+}
+  
+.contacto div{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.formulario input{
+    width: 300px;
+    height: 40px;
+    background-color: rgb(202, 202, 202);
+    border-radius: var(--border-radius);
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: Arial;
+    margin-block-end: 0px;
+}
+
+.formulario textarea{
+    background-color: rgb(202, 202, 202);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    font-size: 18px;
+    font-family: Arial;
+}
+
+
+
+
+
+
+
+.proyectos{
     margin: 80px;
 }
 
