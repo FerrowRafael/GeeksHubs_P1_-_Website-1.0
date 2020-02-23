@@ -68,20 +68,8 @@ body{
 /* EXPERIENCIA */
 .experiencia{
     position:relative;
-    margin: 0px 400px 0px 400px;
-    padding-top: var(--padding);   
+    margin: 0px 400px 0px 400px; 
 }
-
-/* HABILIDADES */
-/* .habilidades{
-    text-align: center;
-    position:relative;
-} */
-
-/* HERRAMIENTAS */
-/* .herramientas{
-
-}  */
 
 /* PERSONAL */
 .personal{
@@ -148,14 +136,12 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: var(--padding);
 }
 
 .column{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: var(--padding);
 }
 
 /* H GROUP */
@@ -174,14 +160,11 @@ h2{
 } 
 
 h3{
+    padding-top: 15px;
     padding-bottom: 20px;
     font-family: 'Advent Pro', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
     color: var(--color-azul);
-}
-
-.idiomas h3  {
-    background-color: lawngreen;
 }
 
 p{
@@ -224,8 +207,6 @@ li > a{
     color: black;
 }
 
-
-
 .sobreMi b{
     color:black;    
 }
@@ -236,6 +217,10 @@ li > a{
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+}
+
+.logosGrid h3{
+    padding: 15px 15px 0px 0px;
 }
 
 .logoIT{
@@ -267,9 +252,6 @@ li > a{
 
 /* FIN BOTON CONTACTAR */
 
-.idiomas div{
-    padding: 0px 15px 15px 15px;
-}
 
 .deporte{
     display: flex;
